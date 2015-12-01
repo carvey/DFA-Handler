@@ -12,8 +12,8 @@ import java.util.Scanner;
  * The parser for this program accepts text files containing the following format. File location should be specified
  * as the first command line param for the program
  *
- * {state1, state2, ...}
  * {character1, character2, ...}
+ * {state1, state2, ...}
  * start_state
  * {accept_state1, accept_state2, ...}
  * (current_state, character_input)->new_state

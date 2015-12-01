@@ -48,11 +48,11 @@ class Machine
     {
         for (Character character : string.toCharArray())
         {
-            //
+            // If the previous state validation returned false, then return null
             if (this.current_state == null)
                 return false;
 
-            //
+            //If the character being evaluated is in the alphabet, then proceed to state validation
             if (this.validate_string_in_alphabet(character))
             {
                 current_state = current_state.validate(character);
@@ -77,7 +77,7 @@ class Machine
 
     /**
      * Formats and prints out whether or not the string is accepted
-     * @param string
+     * @param string A more human readable string telling whether or not the given string is valid or not
      */
     public void print_validation(String string)
     {
